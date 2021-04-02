@@ -79,14 +79,7 @@
 
                 <div class="container" style="max-width:850px; margin-top: 20px; margin-bottom: 40px">
                     <p style='line-height:1.3; font-size:large; text-align: justify'>
-                       Although neural text-to-speech (TTS) models have attracted a lot of attention and succeeded in generating human-like speech,
-                       there is still room for improvements to its naturalness and architectural efficiency.
-                       In this work, we propose a novel non-autoregressive TTS model, namely Diff-TTS, which achieves highly natural and efficient speech synthesis.
-                       Given the text, Diff-TTS exploits a denoising diffusion framework to transform the noise signal into a mel-spectrogram
-                       via a certain number of denoising steps. In order to learn mel-spectrogram distribution conditioned on text,
-                       we present a likelihood-based optimization method for TTS. Furthermore, to boost up the inference speed,
-                       we leverage the accelerated sampling method that allows Diff-TTS to generate raw waveforms much faster without significantly degrading perceptual quality.
-                       In our experiments, we demonstrate that the inference speed of Diff-TTS achieves up to 28 times faster than the real-time with a single NVIDIA 2080Ti GPU while generating high-fidelity audios.
+                       Although neural text-to-speech (TTS) models have attracted a lot of attention and succeeded in generating human-like speech, there is still room for improvements to its naturalness and architectural efficiency. In this work, we propose a novel non-autoregressive TTS model, namely Diff-TTS, which achieves highly natural and efficient speech synthesis. Given the text, Diff-TTS exploits a denoising diffusion framework to transform the noise signal into a mel-spectrogram via diffusion time steps. In order to learn the mel-spectrogram distribution conditioned on the text, we present a likelihood-based optimization method for TTS. Furthermore, to boost up the inference speed, we leverage the accelerated sampling method that allows Diff-TTS to generate raw waveforms much faster without significantly degrading perceptual quality. Through experiments, we verified that Diff-TTS generates 28 times faster than the real-time with a single NVIDIA 2080Ti GPU.
                     </p>
                 </div>
             </div>
